@@ -2999,6 +2999,11 @@ function RayfieldLibrary:CreateWindow(Settings)
 				SaveConfiguration()
 			end
 
+function SliderSettings:SetSuffix(NewVal)
+				Slider.Main.Information.Text = tostring(NewVal)
+				SaveConfiguration()
+			end
+
 			if Settings.ConfigurationSaving then
 				if Settings.ConfigurationSaving.Enabled and SliderSettings.Flag then
 					RayfieldLibrary.Flags[SliderSettings.Flag] = SliderSettings
