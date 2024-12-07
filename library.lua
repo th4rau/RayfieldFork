@@ -3000,7 +3000,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 			end
 
 function SliderSettings:SetSuffix(NewVal)
-				Slider.Main.Information.Text = tostring(NewVal)
+				SliderSettings.Suffix = tostring(NewVal)
 				SaveConfiguration()
 			end
 
