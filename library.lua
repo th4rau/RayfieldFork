@@ -2880,10 +2880,8 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 			Slider.Main.Progress.Size =	UDim2.new(0, Slider.Main.AbsoluteSize.X * ((SliderSettings.CurrentValue + SliderSettings.Range[1]) / (SliderSettings.Range[2] - SliderSettings.Range[1])) > 5 and Slider.Main.AbsoluteSize.X * (SliderSettings.CurrentValue / (SliderSettings.Range[2] - SliderSettings.Range[1])) or 5, 1, 0)
 
-			if not SliderSettings.Suffix then
-				Slider.Main.Information.Text = tostring(SliderSettings.CurrentValue)
-			else
-				Slider.Main.Information.Text = tostring(SliderSettings.CurrentValue) .. " " .. SliderSettings.Suffix
+			if SliderSettings.Suffix then
+				Slider.Main.Information.Text = tostring(SliderSettings.CurrentValue) .. " " .. Rarities[SliderSettings.CurrentValue]
 			end
 
 			Slider.MouseEnter:Connect(function()
