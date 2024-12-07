@@ -2,6 +2,7 @@
 
 Rayfield Interface Suite
 by Sirius
+(forked so I can edit suffix)
 
 shlex | Designing + Programming
 iRay  | Programming
@@ -12,9 +13,9 @@ iRay  | Programming
 
 local InterfaceBuild = 'K7GD'
 local Release = "Build 1.54"
-local RayfieldFolder = "Rayfield"
+local RayfieldFolder = "AutShit"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
-local ConfigurationExtension = ".rfld"
+local ConfigurationExtension = ".autshit"
 
 
 
